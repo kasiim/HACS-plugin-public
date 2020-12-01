@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <style>
+      body {
+        width: 200px;
+        font-family: "Source Sans Pro";
+        /* color: rgb(46, 46, 46); */
+        color: #202124;
+      }
+      div {
+        width: 100%;
+        display: block;
+        margin: 5px;
+        font-size: large;
+      }
+
+      input::-webkit-inner-spin-button{
+        opacity: 1;
+        vertical-align: top;
+        position: relative;
+      }
+      input[type=checkbox] {
+        transform: scale(1.5);
+      }
+      input[type=number] {
+        width: 40px;
+      }
+      input {
+        transform: translateY(-2px);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      Options
+    </div>
+    <div>
+    <label>
+      Plugin enabled:
+      <input type="checkbox" id="enableHACS" name="enableHACS" />
+    </label>
+  </div>
+  <div>
+    <label for="intervalHACS">Popup interval:</label>
+    <input name="intervalHACS" id="intervalHACS" type="number" id="points" name="points" step="1" max="60" min="1">
+    min
+  </div>
+  </body>
+  <script src="popup.js"></script>
+</html>

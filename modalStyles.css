@@ -1,0 +1,73 @@
+#HACSContainer a {
+    color: blue;
+    font-weight: normal;
+}
+#HACSContainer a:visited {
+    color: purple;
+    font-weight: normal;
+}
+
+#HACSContainer div {
+    line-height: normal;
+}
+
+#HACSContainer {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 13333337;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid  rgb(230, 230, 230);
+    box-shadow: 0 0 10px #ddd;
+    border-radius: 10px;
+    opacity: 0;
+    font-family: arial,sans-serif;
+    font-size: small;
+    line-height: normal;
+}
+
+#HACSExitBtn {
+    float: right;
+    width: 20px;
+    height: 20px;
+    /*background-color: #000000;
+    border-radius: 20px;
+    */
+    transform: translateX(-2px) translateY(2px);
+    color: #585858;
+    font-size: 20px;
+    z-index: 99999999999999999;
+    cursor: pointer;
+    /* position: fixed;
+    left: 5px;
+    top: 10px; */
+}
+
+#HACSTitle {
+    pointer-events: none;
+    width: 100%;
+    position: absolute;
+    font-size: 20px;
+}
+
+#HACSText {
+    width: 100%;
+    position: absolute;
+    font-size: 10pt;
+}
+
+.HACSFlex {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#HACSContainer.HACSFadeOut {
+    opacity: 0;
+}
+
+#HACSContainer.HACSFadeIn {
+    opacity: 1;
+}

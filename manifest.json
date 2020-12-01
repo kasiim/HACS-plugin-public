@@ -1,0 +1,36 @@
+{
+    "name":"HACS-plugin",
+    "version":"0.1",
+    "manifest_version":2,
+    "description":"HACS cyber hygiene raiser plugin! Authors: Sara Farooghian, Kaido Siimer",
+    "background":{
+        "scripts":[
+            "background.js"
+            ],
+        "persistent": true
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://*/*", "http://*/*"],
+        "js": ["content.js"],
+        "css" : ["modalStyles.css"],
+        "run_at": "document_end"
+      }
+    ],
+    "page_action" : {
+        "default_popup" : "popup.html"
+    },
+    "permissions":[
+        "contextMenus", 
+        "tabs",
+        "storage",
+        "alarms",
+        "declarativeContent",
+        "http://*/*",
+        "https://*/*"
+        ],
+    "icons":{
+        "16":"images/icon_16.png",
+        "128":"images/icon_128.png"
+    }
+}
